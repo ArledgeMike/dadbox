@@ -1,0 +1,230 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	border-style: none;
+	border-width: 0;
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	background-color: #000000;
+	line-height: 1;
+	overflow-y: hidden;
+}
+ol, ul {
+	list-style: none outside none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: none;
+}
+table {
+	border-collapse: collapse;
+}
+#dadbox {
+	background-color: black;
+	background-image: url("../images/dadbox.jpg");
+	background-position: 0 0;
+	height: 589px;
+	margin: auto;
+	width: 1024px;
+	position:relative;
+}
+.sc-player {
+	background-color: transparent;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.sc-artwork-list {
+	display:none;
+	background-color: black;
+	left: 50%;
+	position: absolute;
+	padding-bottom:25px;
+	top: 100px;
+	width: 660px;
+	margin-left:-375px;
+	z-index: 5;
+}
+.sc-artwork-list img {
+	float: left;
+	height: 200px;
+	margin: 10px;
+	width: 200px;
+}
+.sc-trackslist {
+        display:none;
+	color: white;
+	float: left;
+	font-family: arial;
+	font-size: 16px;
+	left: 137px;
+	position: absolute;
+	top: 100px;
+	width: 660px;
+	z-index: 9;
+}
+.sc-trackslist li {
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin-left: 15px;
+	text-align: center;
+	width: 200px;
+	padding-top:221px;
+}
+.sc-trackslist a {
+	color: white;
+}
+.sc-trackslist li span.sc-track-duration{
+  margin-left:8px;
+}
+.sc-info, .sc-info-toggle {
+	height: 0;
+	visibility: hidden;
+	width: 0;
+}
+.sc-controls {
+	background-color: transparent;
+	height: 67px;
+	left: 393px;
+	position: absolute;
+	top: 494px;
+	width: 229px;
+}
+.sc-scrubber {
+	background-color: transparent;
+	height: 126px;
+	left: 121px;
+	position: absolute;
+	top: 27px;
+	width: 780px;
+	z-index: 1;
+}
+.sc-time-span {
+	height: 66px;
+	position: absolute;
+	top: 0px;
+	width: 778px;
+	left:0px;
+	box-shadow: inset 10px 10px 10px black;
+}
+.sc-waveform-container img {
+	background-color: transparent;
+	height: 100%;
+	opacity:.7;
+	position: relative;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+.sc-player-engine-container {
+	height: 1px;
+	width: 1px;
+}
+.sc-buffer {
+	background: none repeat scroll 0 0 rgba(132, 132, 132, 0.5);
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	width: 0;
+	z-index: 0;
+}
+.sc-played {
+	background-color: rgba(255,0,0,.5);
+	height:100%;
+	position: absolute;
+	top: 0px;
+	width: 0;
+}
+.sc-waveform-container, .sc-time-span {
+	background-color: transparent;
+}
+.sc-waveform-container{
+	width:100%;
+	height:100%;
+}
+.sc-time-indicators {
+	color: white;
+	font-family:san-serif;
+	font-size: 13px;
+	height: 9px;
+	left: 409px;
+	padding-top: 0px;
+	position: absolute;
+	text-align: center;
+	top: 246px;
+	width: 74px;
+}
+.sc-volume-status {
+	background: none repeat scroll 0 0 rgba(186, 0, 0, 0.5);
+	float: left;
+	height: 100%;
+}
+.sc-volume-slider {
+	background-color: transparent;
+	height: 36px;
+	left: 206px;
+	position: absolute;
+	top: 80px;
+	width: 553px;
+}
+.sc-play {
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: none;
+	background-position: 0 0;
+	color: transparent;
+	cursor: pointer;
+	display: block;
+	height: 50px;
+	left: 33px;
+	position:absolute;
+	top: 7px;
+	width: 50px;
+}
+
+.sc-pause {
+	background-color: transparent;
+	color: transparent;
+	display: block;
+	height: 52px;
+	left: 91px;
+	position: absolute;
+	top: 6px;
+	width: 51px;
+}
+#ejectbutton {
+	cursor: pointer;
+	height: 50px;
+	left: 543px;
+	position: relative;
+	top: 500px;
+	width: 50px;
+}
+#support{
+  position:absolute;
+  width:40px;
+  height:20px;
+  top:269px;
+  left:407px;
+  display:block;
+  cursor:pointer;
+}
+#dev_help{
+        display:none;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-320px;
+	margin-top:-250px;
+	z-index:9999999;
+}
